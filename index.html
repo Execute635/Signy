@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Signy</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__logo">
+                <a href="index.html" class="header__logo-link">
+                    <img src="img/Logo.svg" alt="Signy">
+                </a>
+            </div>
+            <nav class="header__navigations">
+                <select class="header__tel">
+                    <option value="0800750643">0 800 750 643</option>
+                    <option value="0800750643">0 800 589 983</option>
+                    <option value="0800750643">0 800 097 123</option>
+                </select>
+                    <a href="about.html" class="header__about-us">
+                        <span>Про нас</span>
+                    </a>
+                <a href="#!" class="header__price">
+                    <span>Цены</span>
+                </a>
+                <a href="contact.html" class="header__contacts">
+                    <span>Контакты</span>
+                </a>
+                <div class="header__button">
+                    <button class="header__button-01">Вход</button>
+                <button id="myBtn-02" class="header__button-02">регистрация</button>
+                </div>
+                <select class="header__language">
+                    <option value="ru">рус</option>
+                    <option value="uk">укр</option>
+                    <option value="en">англ</option>
+                </select>
+                <button class="header__nav-close">
+                    <span class="header__nav-close-line"></span>
+                    <span class="header__nav-close-line"></span>
+                </button>
+            </nav>
+            <button class="header__burger burger">
+                <span></span>
+            </button>
+        </div>
+        <div id="mypopup-02" class="popup-02">
+            <div class="popup-02__content">
+                <span class="popup-02__close">&times;</span>
+                <h3 class="popup-02__title">Демо версия</h3>
+                <p class="popup-02__text">Заполни форму и наши менеджеры свяжутся с тобой</p>
+                <form class="popup-02__form">
+                    <div class="popup-02__form-item-01 popup-02__form-item">
+                        <span class="popup-02__form-span">Имя*:</span>
+                        <input class="popup-02__input-01 popup-02__input" type="text" placeholder="Иван" name="username">
+                    </div>
+                    <div class="popup-02__form-item-02 popup-02__form-item">
+                        <span class="popup-02__form-span">Электронная почта*:</span>
+                        <input class="popup-02__input-02 popup-02__input" type="email" placeholder="ivan@mail.com" name="email">
+                    </div>
+                    <div class="popup-02__form-item-03 popup-02__form-item">
+                        <span class="popup-02__form-span">Телефон*:</span>
+                        <input class="popup-02__input-03 popup-02__input" type="tel" placeholder="+38 000 000 00 00" name="telephone">
+                    </div>
+                    <button class="popup-02__button">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </header>
+     <!-- Slider main container -->
+    <div class="home-slider">
+        <!-- Additional required wrapper -->
+       <div class="swiper-wrapper">
+           <!-- Slides -->
+            <div class="swiper-slide home-slider__slide" style="background-image: url(img/slider/Mask-01.png);">
+                <div class="home-slider__container container">
+                    <div class="home-slider__menu">
+                        <h1 data-animate="bottom_1" class="home__title">
+                        Цифровой документооборот в три этапа:
+                        </h1>
+                        <p data-animate="bottom_2" class="home__sub-title">Быстрая регистрация</p>
+                        <p data-animate="bottom_3" class="home__text">Мы создали, возможно, самую простую регистрацию. Регистрируйся, получай полный доступ к сервису и 1000 подписей документов в подарок!</p>
+                        <button data-animate="bottom_4" class="home__button">Попробовать Бесплатно</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide home-slider__slide" style="background-image: url(img/slider/Mask-02.png);">
+                <div class="home-slider__container container">
+                    <div class="home-slider__menu">
+                        <h1 data-animate="bottom_1" class="home__title">
+                            Цифровой документооборот в три этапа:
+                        </h1>
+                        <p data-animate="bottom_2" class="home__sub-title">Быстрая регистрация</p>
+                        <p data-animate="bottom_3" class="home__text">Мы создали, возможно, самую простую регистрацию. Регистрируйся, получай полный доступ к сервису и 1000 подписей документов в подарок!</p>
+                        <button data-animate="bottom_4" class="home__button">Попробовать Бесплатно</button>
+                    </div>
+                </div>
+            </div>
+                <div class="swiper-slide home-slider__slide" style="background-image: url(img/slider/Mask-03.png);">
+                    <div class="home-slider__container container">
+                        <div class="home-slider__menu">
+                            <h1 data-animate="bottom_1" class="home__title">
+                                Цифровой документооборот в три этапа:
+                            </h1>
+                            <p data-animate="bottom_2" class="home__sub-title">Быстрая регистрация</p>
+                            <p data-animate="bottom_3" class="home__text">Мы создали, возможно, самую простую регистрацию. Регистрируйся, получай полный доступ к сервису и 1000 подписей документов в подарок!</p>
+                            <button data-animate="bottom_4" class="home__button">Попробовать Бесплатно</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+            <div class="home-slider__pagination swiper-pagination"></div>
+        </div>
+    </div>
+    <section class="benefits">
+        <div class="benefits__container">
+            <div class="benefits__item benefits__item-01">
+                <h3 class="benefits__title">Моментально</h3>
+                <p class="benefits__text benefits__text-01">Никаких задержек. 1 секунда на подписание</p>
+            </div>
+            <div class="benefits__item benefits__item-02">
+                <h3 class="benefits__title">Глобально</h3>
+                <p class="benefits__text benefits__text-02">Сервис доступен 24\7 со всех устройств</p>
+            </div>
+            <div class="benefits__item benefits__item-03">
+                <h3 class="benefits__title">Экономно</h3>
+                <p class="benefits__text benefits__text-03">В 30 раз дешевле чем почта и курьеры</p>
+            </div>
+        </div>
+    </section>
+    <section class="product">
+        <div class="product__container container">
+            <div class="product__comfort-01">
+                <div class="product__comfort">
+                    <h2 class="product__comfort-title">Комфорт в работе</h2>
+                    <p class="product__comfort-text product__comfort-text-01">Создавай документы по твоим личным привычным шаблонам. Это индивидуально!</p>
+                    <p class="product__comfort-text product__comfort-text-01">Настраивай порядок подписание документа, если вас несколько человек. Это ответственно!</p>
+                    <p class="product__comfort-text product__comfort-text-01">Загружай XML файл с собственным шаблоном готового документа. Это удобно!</p>
+                    <p class="product__comfort-text product__comfort-text-01">Работай в супер простом и понятном интерфейсе без сложностей. Это приятно!</p>
+                    <button class="product__button product__button-01">Узнать больше</button>
+                </div>
+                <div class="product__photo">
+                    <img src="img/01.png" alt="example" class="product__img">
+                </div>
+            </div>
+            <div class="product__comfort-02">
+                <div class="product__photo product__photo-02">
+                    <img src="img/02.png" alt="example" class="product__img">
+                </div>
+                <div class="product__comfort">
+                    <h2 class="product__comfort-title product__comfort-title-02">Наш продукт это:</h2>
+                    <p class="product__comfort-text product__comfort-text-02">Web версия без установки программного обеспечения</p>
+                    <p class="product__comfort-text product__comfort-text-02">Возможность бесплатно и безлимитно обрабатывать входящие документы</p>
+                    <p class="product__comfort-text product__comfort-text-02">Простота интеграции с 1С и другими сервисами</p>
+                    <p class="product__comfort-text product__comfort-text-02">Поддержка входа через Mobile ID</p>
+                    <button class="product__button product__comfort-button-02">Зарегистрироваться</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="caption">
+        <h2 class="caption__main-title">Пакеты цифровых подписей </h2>
+        <div class="caption__container">
+            <div class="caption__block">
+                <div class="caption__item">
+                    <h4 class="caption__title">Demo</h4>
+                    <p class="caption__sub-title">30 документів</p>
+                    <p class="caption__price"><span>0</span>грн/місяць</p>
+                    <button class="caption__button caption__button-01">Зарегистрироваться</button>
+                </div>
+                <div class="caption__item">
+                    <h4 class="caption__title">Business</h4>
+                    <p class="caption__sub-title">1 000 документів</p>
+                    <p class="caption__price"><span>1 000</span>грн/рік</p>
+                    <button class="caption__button caption__button-02">Заказать</button>
+                </div>
+                <div class="caption__item">
+                    <h4 class="caption__title">Pro</h4>
+                    <p class="caption__sub-title">10 000 документів</p>
+                    <p class="caption__price"><span>9 000</span>грн/рік</p>
+                    <button class="caption__button caption__button-03">Заказать</button>
+                </div>
+                <div class="caption__item">
+                    <h4 class="caption__title">Individual</h4>
+                    <p class="caption__sub-title">Необмежена кількість документів</p>
+                    <button class="caption__button caption__button-04">Связаться с нами</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="document">
+        <div class="document__container">
+            <h2 class="document__record">5 820 125 114</h2>
+            <p class="document__sub-title">подписано документов</p>
+            <p class="document__text">Наша компания уже более 30 лет создает удобные <br> решения для бизнеса любого размера. Мы гордимся <br> Signy как безопасным и комфортным продуктом</p>
+        </div>
+    </section>
+    <section class="friend">
+        <h3 class="friend__title">Друзья Signy</h3>
+         <!-- Slider main container -->
+    <div class="friend-slider swiper-container">
+        <!-- Additional required wrapper -->
+       <div class="friend-slider__wrapper swiper-wrapper">
+           <!-- Slides -->
+            <div class="friend-slider__slide swiper-slide">
+                <div class="friend-slider__image">
+                    <img src="img/icon/UkrOboron.png" alt="Картинка">
+                </div>
+            </div>
+            <div class="friend-slider__slide swiper-slide">
+                <div class="friend-slider__image">
+                    <img src="img/icon/new.png" alt="Картинка">
+                </div>
+            </div>
+            <div class="friend-slider__slide swiper-slide">
+                <div class="friend-slider__image">
+                    <img src="img/icon/n-ix.png" alt="Картинка">
+                </div>
+            </div>
+            <div class="friend-slider__slide swiper-slide">
+                <div class="friend-slider__image">
+                    <img src="img/icon/bread.png" alt="Картинка">
+                </div>
+            </div>
+        </div>
+            <!-- If we need pagination -->
+         <div class="friend-slider__pagination swiper-pagination"></div>
+    </div>
+    </section>
+    <section class="writing">
+        <h3 class="writing__title">Интересно пишем про</h3>
+        <div class="writing__container container">
+            <div class="writing__block">
+                <div class="writing__item">
+                    <div class="writing__photo">
+                        <img src="img/Placeholder-01.png" alt="document" class="writing__img">
+                    </div>
+                    <p class="writing__time">28.05.2020</p>
+                    <p class="writing__sub-title">Заголовок короткий в две строки</p>
+                </div>
+                <div class="writing__item">
+                    <div class="writing__photo">
+                        <img src="img/Placeholder-02.png" alt="document" class="writing__img">
+                    </div>
+                    <p class="writing__time">28.05.2020</p>
+                    <p class="writing__sub-title">Заголовок короткий в две строки</p>
+                </div>
+                <div class="writing__item">
+                    <div class="writing__photo">
+                        <img src="img/Placeholder-01.png" alt="document" class="writing__img">
+                    </div>
+                    <p class="writing__time">28.05.2020</p>
+                    <p class="writing__sub-title">Заголовок короткий в две строки</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="acquaintance">
+        <h2 class="acquaintance__title">Познакомимся в живую?</h2>
+        <div id="video" class="acquaintance__video">
+            <div class="acquaintance__video-container">
+                <div class="acquaintance__video-item">
+                    <iframe class="acquaintance__video-element" src="https://www.youtube.com/embed/QZwneRb-zqA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="questions">
+        <h2 class="questions__main-title">Популярные вопросы и ответы на них</h2>
+        <div class="questions__container">
+            <div class="questions__block">
+                <div class="questions__item">
+                    <p class="questions__title">Почему круглую пиццу ставят в квадратную коробку, а нарезают треугольниками?</p>
+                    <p class="questions__sub-text">- Потому что делают ее без соблюдения технологических процессов.</p>
+                </div>
+                <div class="questions__item">
+                    <p class="questions__title">Почему вода мокрая?</p>
+                    <p class="questions__sub-text">- Потому что делают ее без соблюдения технологических процессов.</p>
+                </div>
+                <div class="questions__item">
+                    <p class="questions__title">Видят ли микробы друг друга?</p>
+                    <p class="questions__sub-text">- Потому что делают ее без соблюдения технологических процессов.</p>
+                </div>
+                <div class="questions__item">
+                    <p class="questions__title">Почему кровь красная а вены синие?</p>
+                    <p class="questions__sub-text">- Потому что делают ее без соблюдения технологических процессов.</p>
+                </div>
+                <div class="questions__item">
+                    <p class="questions__title">Из чего сделана радуга?</p>
+                    <p class="questions__sub-text">- Потому что делают ее без соблюдения технологических процессов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="subscribe">
+        <h2 class="subscribe__title">Подпишись на наши новости!</h2>
+        <p class="subscribe__text">Введи свой электронный адрес и будь в курсе всех обновлений</p>
+        <form>
+            <input class="subscribe__input" type="email">
+            <button id="myBtn-01" class="subscribe__button">отправить</button>
+        </form>
+        <div id="mypopup-01" class="popup">
+            <div class="popup__content">
+                <span class="popup__close">&times;</span>
+                <h2 class="popup__title">Отлично!</h2>
+                <p class="popup__text">На адресс example@maile.com теперь будут приходить самые важные новости</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__block-01">
+                <nav class="footer__navigation-01">
+                    <a href="index.html" class="footer__logo">
+                        <img src="img/icon/footer-logo.svg" alt="Signy">
+                    </a>
+                    <span>
+                        <a class="footer__span-link-01" href="#!">© 2020 Signy</a>
+                    </span>
+                </nav>
+            </div>
+            <div class="footer__block-02">
+                <nav class="footer__navigation-02">
+                    <ul class="footer__item-01">
+                        <li class="footer__list-01">
+                            <a href="about.html">Про наc</a>
+                        </li>
+                        <li class="footer__list-02">
+                            <a href="#!">Цены</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__item-02">
+                        <li class="footer__list-03">
+                            <a href="#!">Вход</a>
+                        </li>
+                        <li class="footer__list-04">
+                            <a href="#!">Регистрация</a>
+                        </li>
+                    </ul>
+                    <span>
+                        <a class="footer__span-link-02" href="#!">Договір оферти</a>
+                    </span>
+                </nav>
+                <nav class="footer__navigation-03">
+                    <ul class="footer__item-03">
+                        <li class="footer__list-05">
+                            <a href="blog.html">Блог</a>
+                        </li>
+                        <li class="footer__list-06">
+                            <a href="contact.html">Контакты</a>
+                        </li>
+                    </ul>
+                    <span>
+                        <a class="footer__span-link-03" href="#!">Безпека сервісу</a>
+                    </span>
+                </nav>
+            </div>
+            <div class="footer__block-03">
+                <nav class="footer__navigation-04">
+                    <ul class="footer__item-04">
+                        <li class="footer__list-07">
+                            <a href="#!">infosmartsign@smarttender.biz</a>
+                        </li>
+                        <li class="footer__list-08">
+                            <a href="#!">Facebook</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="footer__navigation-05">
+                    <ul class="footer__item-05">
+                        <li class="footer__list-09">пр-т Миколи Бажана, 14 А <br> Київ, 02072</li>
+                        <li class="footer__list-10">0 800 750643</li>
+                        <li class="footer__list-11">+380 44 334 56 43</li>
+                        <li class="footer__list-12">+380 44 338 86 43</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <script src="swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+</html>
